@@ -1,0 +1,346 @@
+<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				/*list-style-type: none;*/
+			}
+			#bigbox{
+				width: 100%;
+				height: 100%;
+			}
+			#tops{
+				width: 100%;
+				height: 35px;
+				background-color: #2B2B2B;
+			}
+			#top{
+				width: 1200px;
+				height: 30px;
+				margin: auto;
+			}
+			#topleft{
+				width: 230px;
+				height: 35px;
+				float: left;
+				color: grey;
+				font-size: 14px;
+			}
+			
+			#topleft span{
+				display: block;
+				width: 110px;
+				height: 35px;
+				float: left;
+				line-height: 35px;
+				float: left;
+			}
+			#topleft>ul{
+				/*width: 50px;
+				height: 35px;*/
+				float: left;
+				background-color: saddlebrown;
+			}
+			#topleft>ul>li{
+				width: 50px;
+				height: 35px;
+				line-height: 35px;
+				list-style-type: none;			
+			}
+			#topleft:hover{
+				cursor: pointer;
+				color: white;
+			}
+			#wuhan{
+				background-color: #2B2B2B;
+				width: 260px;
+				height: 90px;
+				margin-left: 130px;
+				margin-top: 35px;
+				position: absolute;
+				display: none;
+			}
+			#wuhan a{
+				color: gray;
+				text-decoration: none;
+				margin-left: 12px;
+				font-size: 15px;
+			}
+			#wuhan a:hover{
+				color: white;
+			}
+			#topright{
+				width: 370px;
+				height: 35px;
+				float: right;
+				color: grey;
+				line-height: 35px;
+				font-size: 15px;
+			}
+			#sp{
+				margin-left: 78px;
+			}
+			.sp:hover{
+				color: white;
+				cursor: pointer;
+			}
+			#top2{
+				width: 1200px;
+				height: 80px;
+				margin: auto;
+			}
+			#top2left{
+				width: 500px;
+				height: 80px;
+				float: left;
+			}
+			#top2left>img{
+				margin-top: 16px;
+			}
+			#top2conten{
+				width: 470px;
+				height: 80px;
+				float: left;
+			}
+			#top2conten_1{
+				width: 94px;
+				height: 35px;
+				font-size: 14px;
+				text-align: center;
+				margin-top: 20px;
+				line-height: 35px;
+				float: left;
+				border: 1px solid black;
+				border-right: none;
+				
+			}
+			#top2conten_1:hover{			
+				border-bottom: none;
+			}
+			#xiala{
+				width: 94px;
+				position: absolute;
+				background-color: white;
+				border: 1px solid black;			
+				border-top:none;
+				display: none;
+				z-index:999;
+			}
+			#xiala ul li{
+				list-style-type: none;				
+			}
+			#xiala ul li:hover{				
+				cursor: pointer;
+				color:#E1C38B;
+				background-color:#F6F6F6;
+			}
+			#top2conten_2{
+				width: 238px;
+				height: 35px;
+				font-size: 16px;
+				margin-top: 20px;
+				float: left;			
+				border: 1px solid black;
+				border-left:none;
+				
+			}
+			#zhuijiao{
+				width: 238px;
+				background-color: white;
+				border: 1px solid black;
+				border-top: none;
+				position: absolute;
+				z-index: 999;
+			}
+			#zhuijiao ul{
+				background-color: white;
+				position: absolute;
+			}
+			#top2conten_3{
+				width: 84px;
+				height: 35px;
+				border: 1px solid black;
+				background-color: black;
+				font-weight: bold;
+				float: left;
+				text-align: center;
+				margin-top: 20px;
+				line-height: 35px;
+				color: white;
+				cursor: pointer;
+			}
+			#top2right{
+				width:230px ;
+				height: 70px;
+				float: left;
+				margin-top: 10px;
+			}
+			#top3s{
+				width:100%;
+				height: 50px;
+				background-color: gainsboro;
+			}
+			#top3{
+				width: 1080px;
+				height: 50px;
+				margin: auto;					
+				position: relative;
+				z-index: 99;	
+			}
+			#top3>ul>li{
+				list-style-type: none;
+				width: 120px;
+				height: 50px;
+				float: left;
+				text-align: center;
+				line-height: 50px;
+				color: dimgray;
+			}
+			#top3>ul>li:hover{
+				background-color: #C79E68;
+				color: white;
+				cursor: pointer;
+			}
+			#top3 ul li ul li{
+				width: 120px;
+				height: 50px;
+				background-color: #C79E68;
+				color: white;
+			}
+			#top3 ul li ul li:hover{
+				background-color: white;
+				color: black;				
+			}
+			#content1{
+				width: 100%;
+				height: 600px;
+			}
+			#content1 img{
+				width: 100%;
+				height: 560px;
+				position: absolute;
+			}
+			#content2{
+				width: 100%;
+				height: 200px;
+				position: absolute;
+				margin-top: -90px;
+			}
+			#content2_1{
+				width: 1200px;
+				height: 120px;
+				margin: auto;
+				background-color: white;
+				-webkit-transform: translate3d(0px,-2px,0);/*浏览器版本号*/
+				-moz-transform:translate3d(0px,-2px,0);/*浏览器版本号*/
+				 box-shadow: 1px 6px 4px 3px #E0E0E0;/*右阴影  下阴影  模糊度    阴影扩展半径    颜色  inset内阴影*/
+			}
+			#content2_1_1{
+				width: 950px;
+				height: 120px;
+				float: left;
+			}
+			#content2_1_1 input{
+				width: 210px;
+				height: 35px;
+				margin-right: 25px;
+				border: 1px solid black;
+				outline: none;
+			}
+			#content2_1_1 select{
+				width: 210px;
+				height: 37px;
+				margin-right: 25px;
+				outline: none;
+				border: 1px solid black;
+				color: gray;
+			}
+			#m{
+				width: 41px;
+				height: 34px;
+				position: absolute;
+				margin-top: -35px;
+				margin-left: 170px;
+				text-align: center;
+				background-color:darkgray;
+				line-height: 34px;
+			}
+			#content2_1_2{
+				width: 130px;
+				height: 100px;
+				float: right;
+				margin-top: 10px;
+				margin-right: 20px;
+				border-left:1px solid gainsboro ;
+			}
+			#baojia{
+				width: 100px;
+				height: 80px;
+				margin-left: 20px;
+				background-color:#C79E68;
+				color: white;
+				font-size: 18px;
+				text-align: center;
+				padding-top: 20px;
+				cursor: pointer;
+			}
+			#content3{
+				width: 1200px;
+				height: 220px;
+				margin: auto;
+				margin-top: 80px;
+				text-align: center;
+			}
+			#content3 ul li{
+				width: 280px;
+				height: 150px;
+				background-color: #DEDFCF;
+				margin-right: 20px;
+				float: left;
+				padding-top: 30px;
+			}
+			#content3 ul li:hover{
+				transform: scale(1.2);
+				transition: 0.2s;
+				 box-shadow: 1px 6px 4px 3px #E0E0E0;/*右阴影  下阴影  模糊度    阴影扩展半径    颜色  inset内阴影*/
+			}
+			#content4{
+				width: 1200px;
+				height: 240px;
+				margin: auto;
+				background-color: darkseagreen;
+			}
+			#con4_1{
+				width: 1200px;
+				height: 80px;
+				font-size: 40px;
+				color: #E1C38B;
+				text-align: center;
+				line-height: 80px;
+				cursor: pointer;
+			}
+			#con4_1_1{
+				width: 50px;
+				height: 1px;
+				margin: auto;
+				border-top: 2px solid #E1C38B;
+			}
+			#con4_2{
+				width: 1200px;
+				height: 100px;
+				margin-top: 20px;
+				background-color: slateblue;
+			}
+			#con4_2 ul li{
+				width: 100px;
+				height: 60px;
+				text-align: center;
+				line-height: 60px;
+				float: left;
+				margin-left: 20px;
+				background-color: salmon;
+			}
+			.li1{
+				padding-left: 40px;
+			}
+		</style>
+		

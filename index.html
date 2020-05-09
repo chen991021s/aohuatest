@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			#bigbox{
+				width: 100%;
+				height: 100%;
+			}
+			#tops{
+				width: 100%;
+				height: 35px;
+				background-color: #2B2B2B;
+			}
+			#top{
+				width: 1200px;
+				height: 30px;
+				margin: auto;
+			}
+			#topleft{
+				width: 230px;
+				height: 35px;
+				float: left;
+				color: grey;
+				font-size: 14px;
+			}
+			
+			#topleft span{
+				display: block;
+				width: 110px;
+				height: 35px;
+				float: left;
+				line-height: 35px;
+				float: left;
+			}
+			#topleft>ul{
+				width: 50px;
+				height: 35px;
+				float: left;
+			}
+			#topleft>ul>li{
+				width: 50px;
+				height: 35px;
+				line-height: 35px;
+				list-style-type: none;			
+			}
+			#topleft:hover{
+				cursor: pointer;
+				color: white;
+			}
+			#wuhan{
+				background-color: #2B2B2B;
+				width: 260px;
+				height: 90px;
+				margin-left: 130px;
+				margin-top: 35px;
+				position: absolute;
+				display: none;
+			}
+			#wuhan a{
+				color: gray;
+				text-decoration: none;
+				margin-left: 12px;
+				font-size: 15px;
+			}
+			#wuhan a:hover{
+				color: white;
+			}
+			#topright{
+				width: 370px;
+				height: 35px;
+				float: right;
+				color: grey;
+				line-height: 35px;
+				font-size: 15px;
+			}
+			#sp{
+				margin-left: 78px;
+			}
+			.sp:hover{
+				color: white;
+				cursor: pointer;
+			}
+			#top2{
+				width: 1200px;
+				height: 80px;
+				margin: auto;
+			}
+			#top2left{
+				width: 500px;
+				height: 80px;
+				float: left;
+			}
+			#top2left>img{
+				margin-top: 16px;
+			}
+			#top2conten{
+				width: 470px;
+				height: 80px;
+				float: left;
+			}
+			#top2conten_1{
+				width: 94px;
+				height: 35px;
+				font-size: 14px;
+				text-align: center;
+				margin-top: 20px;
+				line-height: 35px;
+				float: left;
+				border: 1px solid black;
+				border-right: none;
+				
+			}
+			#top2conten_1:hover{			
+				border-bottom: none;
+			}
+			#xiala{
+				width: 94px;
+				position: absolute;
+				background-color: white;
+				border: 1px solid black;			
+				border-top:none;
+				display: none;
+				z-index:999;
+			}
+			#xiala ul li{
+				list-style-type: none;				
+			}
+			#xiala ul li:hover{				
+				cursor: pointer;
+				color:#E1C38B;
+				background-color:#F6F6F6;
+			}
+			#top2conten_2{
+				width: 238px;
+				height: 35px;
+				font-size: 16px;
+				margin-top: 20px;
+				float: left;			
+				border: 1px solid black;
+				border-left:none;
+				
+			}
+			#zhuijiao{
+				width: 238px;
+				background-color: white;
+				border: 1px solid black;
+				border-top: none;
+				position: absolute;
+				z-index: 999;
+			}
+			#zhuijiao ul{
+				background-color: white;
+				position: absolute;
+			}
+			#top2conten_3{
+				width: 84px;
+				height: 35px;
+				border: 1px solid black;
+				background-color: black;
+				font-weight: bold;
+				float: left;
+				text-align: center;
+				margin-top: 20px;
+				line-height: 35px;
+				color: white;
+				cursor: pointer;
+			}
+			#top2right{
+				width:230px ;
+				height: 70px;
+				float: left;
+				margin-top: 10px;
+			}
+			#top3s{
+				width:100%;
+				height: 50px;
+				background-color: gainsboro;
+			}
+			#top3{
+				width: 1080px;
+				height: 50px;
+				margin: auto;					
+				position: relative;
+				z-index: 99;	
+			}
+			#top3>ul>li{
+				width: 120px;
+				height: 50px;
+				float: left;
+				text-align: center;
+				line-height: 50px;
+				color: dimgray;
+				list-style-type: none;
+			}
+			#top3>ul>li:hover{
+				background-color: #C79E68;
+				color: white;
+				cursor: pointer;
+			}
+			#top3 ul li ul li{
+				width: 120px;
+				height: 50px;
+				background-color: #C79E68;
+				color: white;
+				list-style-type: none;
+			}
+			#top3 ul li ul li:hover{
+				background-color: white;
+				color: black;				
+			}
+			#content1{
+				width: 1340px;
+				height: 600px;
+				margin: auto;
+				overflow: hidden;
+			}
+			#content1 ul li img{
+				width: 1340px;
+				/*width: 100%;*/
+				height: 600px;
+			}			
+			#content1>ul{
+				width: 6700px;
+				margin-left:-1340px;
+				
+			}
+			#content1>ul>li{
+				width: 1340px;
+				height: 600px;
+				float: left;
+				list-style-type: none;				
+			}
+			#content1_but{
+				position: absolute;
+				padding-top: 250px;
+				height: 360px;	
+				cursor: pointer;			
+			}
+			#bt1,#bt2{
+				width: 45px;
+				height: 125px;
+				color: gray;
+				text-align: center;
+				line-height:125px ;
+				font-size: 50px;
+				float: left;
+				margin-left: 30px;
+				background: rgba(243,244,246,0.4);				
+			}
+			#bt2{
+				margin-left: 1180px;
+			}
+			#bt1:hover{
+				background-color: white;
+				cursor: pointer;
+			}
+			#bt2:hover{
+				background-color: white;
+				cursor: pointer;
+			}
+			.content1_2{
+				width: 300px;
+				height: 60px;
+				position: absolute;
+				z-index: 999;
+				left: 50%;
+				margin-left: -150px;
+				margin-top: 440px;
+				line-height: 60px;
+			}
+			.content1_2 ol{
+				width: 300px;
+				height: 60px;
+			}
+			.content1_2 ol li{
+				width: 50px;
+				height: 1.5px;
+				float: left;
+				margin-left: 40px;
+				margin-top: 30px;
+				background-color: gray;
+				list-style-type: none;
+			}
+			 .content1_2 ol .lis{
+				background-color: white;
+			}
+			#content2{
+				width: 100%;
+				height: 200px;
+				position: absolute;
+				margin-top: -90px;
+			}
+			#content2_1{
+				width: 1200px;
+				height: 120px;
+				margin: auto;
+				background-color: white;
+				 box-shadow: 1px 6px 4px 3px #E0E0E0;/*右阴影  下阴影  模糊度    阴影扩展半径    颜色  inset内阴影*/
+			}
+			#content2_1_1{
+				width: 950px;
+				height: 120px;
+				float: left;
+			}
+			#content2_1_1 input{
+				width: 210px;
+				height: 35px;
+				margin-right: 25px;
+				border: 1px solid black;
+				outline: none;
+			}
+			#content2_1_1 select{
+				width: 210px;
+				height: 37px;
+				margin-right: 25px;
+				outline: none;
+				border: 1px solid black;
+				color: gray;
+			}
+			#m{
+				width: 41px;
+				height: 34px;
+				position: absolute;
+				margin-top: -35px;
+				margin-left: 170px;
+				text-align: center;
+				background-color:darkgray;
+				line-height: 34px;
+			}
+			#content2_1_2{
+				width: 130px;
+				height: 100px;
+				float: right;
+				margin-top: 10px;
+				margin-right: 20px;
+				border-left:1px solid gainsboro ;
+			}
+			#baojia{
+				width: 100px;
+				height: 80px;
+				margin-left: 20px;
+				background-color:#C79E68;
+				color: white;
+				font-size: 18px;
+				text-align: center;
+				padding-top: 20px;
+				cursor: pointer;
+			}
+			#content3{
+				width: 1200px;
+				height: 220px;
+				margin: auto;
+				margin-top: 80px;
+				text-align: center;
+			}
+			#content3 ul li{
+				width: 280px;
+				height: 150px;
+				background-color: #DEDFCF;
+				margin-right: 20px;
+				float: left;
+				padding-top: 30px;
+				list-style-type: none;
+			}
+			#content3 ul li:hover{
+				transform: scale(1.2);
+				transition: 0.2s;
+				 box-shadow: 1px 6px 4px 3px #E0E0E0;/*右阴影  下阴影  模糊度    阴影扩展半径    颜色  inset内阴影*/
+			}
+			#content4{
+				width: 1200px;
+				height: 230px;
+				margin: auto;
+				position: relative;
+			}
+			#con4_1,#con7_top_1{
+				width: 1200px;
+				height: 80px;
+				font-size: 40px;
+				color: #E1C38B;
+				text-align: center;
+				line-height: 80px;
+				cursor: pointer;
+			}
+			#con4_1_1,#con7_top_1_1{
+				width: 50px;
+				height: 1px;
+				margin: auto;
+				border-top: 2px solid #E1C38B;
+			}
+			#con4_2{
+				width: 1100px;
+				height: 70px;
+				margin-top: 20px;
+				margin: auto;
+				margin-top: 30px;
+			}
+			#con4_2 ul li{
+				width: 100px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				float: left;
+				margin-left: 20px;
+				list-style-type: none;
+			}
+			#con4_2 ul li:hover{
+				border: 1px solid #E1C38B;
+				color: #C79E68;
+				border-radius:5px ;
+				cursor: pointer;
+			}
+			#content5{
+				width: 1320px;
+				height: 470px;
+				margin: auto;
+				overflow: hidden;
+				position: relative;
+				margin-bottom: 130px;
+			}
+			#content5>ul{
+				width: 20000px;
+			}
+			#content5>ul>li{
+				width: 1100px;
+				height: 580px;
+				float: left;
+				padding-left: 15px;
+				list-style-type: none;
+				transform: translateX(-1000px);
+			}
+			#content5>ul>li>img{
+				width:1100px;
+			}
+			#con5_1{
+				width: 260px;
+				height: 320px;
+				position: absolute;
+				z-index: 999;
+				right: 130px;
+				bottom: 20px;
+				margin-top: 165px;
+				overflow: hidden;
+			}
+			#con5_1 ul{
+				width: 10000px;
+			}
+			#con5_1 ul li{
+				width: 260px;
+				height: 320px;
+				list-style-type: none;
+				float: left;
+			}
+			.c5_1_1{
+				width: 260px;
+				height: 50%;
+				background: rgba(255,211,155,0.6);
+				margin-left: -260px;
+			}
+			.px1{
+				text-align: center;
+				padding-top: 18px;
+				color: white;
+			}
+			.px2{
+				width: 200px;
+				padding-top: 10px;
+				color: white;
+				padding-left: 30px;
+			}
+			.c5_1_2{
+				width: 260px;
+				height: 50%;
+				margin-left: -260px;
+				background-color: white;
+				font-size: 20px;
+				text-align: center;
+				padding-top: 37px;
+			}
+			.pxs1{
+				display: block;
+				float: left;
+				margin-left: 50px;
+				margin-top: 20px;
+			}
+			.span2{
+				display: block;
+				float: left;
+				width: 13px;
+				height: 5px;
+				margin-top: 27px;
+				background-color: #515151;
+				position: absolute;
+				margin-left: 80px;
+			}
+			.span3{
+				display: block;
+				float: left;
+				width: 120px;
+				height: 1px;
+				margin-top: 30px;
+				background-color: #515151;
+			}
+			.pxs2{
+				display: block;
+				float: left;
+				margin-top: 20px;
+			}
+			#butt1{
+				width: 60px;
+				height: 65px;
+				color: white;
+				text-align: center;
+				line-height:60px ;
+				font-size: 30px;
+				float: left;
+				position: absolute;
+				z-index: 999;			
+				background-color: #C79E68;
+				bottom: 0px;
+				left: 55px;
+			}
+			#butt2{
+				width: 60px;
+				height: 65px;
+				color: white;
+				text-align: center;
+				line-height:60px ;
+				font-size: 30px;
+				float: left;
+				position: absolute;
+				z-index: 999;			
+				background-color: #C79E68;
+				bottom: 0px;
+				left: 130px;
+			}
+			#butt1:hover{
+				color: white;
+				background-color: dimgray;
+				cursor: pointer;
+			}
+			#butt2:hover{
+				color: white;
+				background-color: dimgray;
+				cursor: pointer;
+			}
+			#content6{
+				width: 100%;
+				height:500px;
+				background-color: gainsboro;
+			}
+			#con6{
+				width: 1200px;
+				height: 500px;
+				margin: auto;
+			}
+			#con6_left{
+				width: 595px;
+				height: 500px;
+				float: left;
+				position: relative;
+			}
+			#con6_left_top,#con6_right_top{
+				width: 595px;
+				height: 100px;
+			}
+			#con6_left_top span{
+				display:block;
+				width: 510px;
+				height: 20px;
+				float: left;
+			}
+			#con6_right_top span{
+				display:block;
+				width: 535px;
+				height: 20px;
+				float: left;
+			}
+			#con6_left_top a,#con6_right_top a{
+				display:block;
+				width: 50px;
+				height: 20px;
+				float: left;
+				right: 10px;
+				color: gray;
+				text-decoration: none;
+			}
+			#con6_left_top a:hover{
+				color: #E1C38B;
+				text-decoration: underline;
+			}
+			#con6_right_top a:hover{
+				color: #E1C38B;
+				text-decoration: underline;
+			}
+			#con6_left_bottom ,#con6_right_bottom{
+				width: 595px;
+				height: 360px;
+			}
+			.con6_left_bottom_1{
+				width: 100px;
+				height: 340px;
+				float: left;
+				text-align: center;
+			}
+			.con6_left_bottom_1 ol li{
+				width: 100px;
+				height: 113px;
+				cursor: pointer;
+				color: gray;
+				list-style-type: none;
+			}
+			.con6_left_bottom_1 ol li p{
+				font-size: 30px;
+			}
+			.con6_left_bottom_1 ol li span{
+				font-size: 15px;
+			}
+			.con6_left_bottom_1 ol .contentss{
+				color: #C79E68;
+			}
+			#con6_left_bottom_2{
+				width: 473px;
+				height: 340px;
+				float: left;
+				margin-left: 20px;
+				text-align: center;
+				position: relative;
+				overflow: hidden;
+			}
+			#con6_left_bottom_2 img{
+				width: 473px;
+				height: 340px;
+			}
+			#con6_left_bottom_2 ul li{
+				position: absolute;
+				top: 0;
+				left: 0;
+				list-style-type: none;
+			}
+			#con6_left_bottom_2 ul li:hover{
+				transform: scale(1.2);
+				transition:ease-in 1s;
+			}
+			#con6_left_bottom_2_top{
+				width:473px;
+				height: 60px;
+				position: absolute;
+				z-index: 999;
+				margin-left: 120px;
+				bottom: 20px;
+				background-color: #C79E68;
+			}
+			#con6_left_bottom_2_top ul li{
+				padding-top: 10px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				list-style-type: none;
+				background-color: #C79E68;
+				color: white;
+			}
+			#con6_right{
+				width: 595px;
+				height: 500px;
+				margin-left: 10px;
+				float: left;
+			}
+			#con6_right_bottom_1{
+				width: 264px;
+				height:340px;
+				float: left;
+				position: relative;
+			}
+			#con6_right_bottom_1 img{
+				width: 264px;
+				height: 340px;
+			}
+			#con6_right_bottom_1 ul li{
+				width: 264px;
+				height: 340px;
+				top: 0;
+				left: 0;
+				position: absolute;
+				list-style-type: none;
+			}
+			.con6_right_bottom_2{
+				width: 331px;
+				height: 340px;
+				float: left;
+			}
+			.con6_right_bottom_2 ul li{
+				width: 301px;
+				height: 28px;
+				padding-left: 30px;
+				padding-top: 20px;
+			
+			}
+			.con6_right_bottom_2 ul .liss{
+				height: 125px;
+				background-color: #C79E68;
+			}
+			.sp0{
+				font-size: 17px;
+				color:black;
+			}
+			.sp1,.sp2,.sp3,.sp4{
+				font-size: 17px;
+				color:#C79E68;
+			}
+			.ps0,.ps1,.ps2,.ps3,.ps4{
+				font-size: 15px;
+				margin-top: 20px;
+				color: gray;
+			}
+			#yuyue{
+				width: 264px;
+				height: 340px;
+				position: absolute;
+			}
+			#yuyue p{
+				width: 160px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				font-size: 20px;
+				background-color: #C79E68;
+				padding: 3px;
+				border-radius:3px;
+				cursor: pointer;
+				margin: auto;
+				margin-top: 130px;
+				display: none;
+			}
+			#yuyue:hover{
+				background: rgba(0,0,0,0.4);
+			}
+			#content7{
+				width: 1200px;
+				height: 500px;
+				margin: auto;
+			}
+			#con7_top{
+				width: 1200px;
+				height: 170px;
+				margin-top: 120px;
+			}
+			#con7_bottom{
+				width: 1200px;
+				height: 300px;
+			}
+			#con7_bottom_1{
+				width: 1010px;
+				height: 300px;
+				float: left;
+			}
+			#con7_bottom_1_1{
+				width: 250px;
+				height: 300px;
+				background-color: gainsboro;
+				border-left:1px solid darkgray ;
+				float: left;
+			}
+			#con7_bottom_1_2{
+				width: 254px;
+				height: 300px;
+				background-color: gainsboro;
+				border-left:1px solid darkgray ;
+				float: left;
+			}
+			#con7_bottom_1_1:hover{
+				cursor: pointer;
+				border-left:1px solid #C79E68 ;
+			}
+			#con7_bottom_1_2:hover{
+				cursor: pointer;
+				border-left:1px solid #C79E68 ;
+			}
+			#con7_p1,#con7_2_p1{
+				margin-top: 30px;
+				margin-left: 10px;
+				font-size: 17px;
+			}
+			#con7_span1{
+				display: block;
+				float: left;
+				margin-left: 10px;
+				margin-top: 36px;
+				font-size: 25px;
+				color: gray;
+			}
+			#con7_2_span1{
+				display: block;
+				float: left;
+				margin-left: 10px;
+				margin-top: 14px;
+				font-size: 25px;
+				color: gray;
+			}
+			#con7_span2{
+				display: block;
+				float: left;
+				color: darkgray;
+				margin-top: 40px;
+			}
+			#con7_2_span2{
+				display: block;
+				float: left;
+				color: darkgray;
+				margin-top: 17px;
+			}
+			#con7_p2{
+				margin-top: 80px;
+				font-size: 14px;
+				margin-left: 10px;
+				color: dimgray;			
+			}
+			#con7_2_p2{
+				margin-top: 50px;
+				font-size: 14px;
+				margin-left: 10px;
+				color: dimgray;	
+			}
+			#con7s{
+				width: 250px;
+				height: 33px;
+				margin-top: 30px;
+				line-height: 33px;
+			}
+			#con7_2s{
+				width: 250px;
+				height: 33px;
+				line-height: 33px;
+				margin-top: 17px;
+				
+			}
+			#con7_span3{
+				display: block;
+				height: 25px;
+				border-left:1px solid dimgrey ;
+				margin-left: 10px;
+				margin-top: 30px;
+				
+			}
+			#con7_2_span3{
+				display: block;
+				height: 25px;
+				border-left:1px solid dimgrey ;
+				margin-left: 10px;
+				margin-top: 17px;
+			}
+			#con7_span3>img{
+				margin-left: 10px;
+			}
+			#con7_2_span3>img{
+				margin-left: 10px;
+			}
+			#xq,#xq2{
+				width: 100px;
+				height:35px;
+				background-color: #C79E68;
+				color: white;
+				text-align: center;
+				line-height: 35px;
+				float: right;
+				margin-right: 10px;
+				margin-top: 20px;
+			}
+			#xq:hover{
+				background-color: white;
+				color: #C79E68;
+				border: 1px solid #C79E68;
+				cursor: pointer;
+			}
+			#xq2:hover{
+				background-color: white;
+				color: #C79E68;
+				border: 1px solid #C79E68;
+				cursor: pointer;
+			}
+			#con7_bottom_1_3{
+				width: 503px;
+				height: 300px;
+				float: left;
+			}
+			#con7_ul1{
+				width: 503px;
+				height: 300px;
+				float: left;
+			}
+			#con7_ul1 ul li{
+				height: 30px;
+				margin-top: 10px;
+				margin-left: 15px;
+				font-size: 15px;
+				list-style-type: none;       
+				cursor: pointer;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+			}
+			#con7_ul1{
+				margin-top: 20px;
+			}
+			#con7_ul1 ul li span{
+				color: darkgray;
+			}
+			.pp{
+				width: 370px;
+				float: left;
+			}
+			.dian{
+				float: left;
+				width: 6px;
+				margin-top: 8px;
+				margin-right: 5px;
+				height: 6px;
+				border: 1px solid darkgray;
+			}
+			#con7_bottom_2{
+				width: 190px;
+				height: 300px;
+				background-color: gainsboro;
+				float: left;
+			}
+			#con7_bottom_2 ul li{
+				width: 190px;
+				height: 55px;
+				text-align: center;
+				font-size: 20px;
+				list-style-type: none;
+				padding-top:20px ;
+				cursor: pointer;
+			}
+			#con7_bottom_2 ul li p{
+				color: gray;
+				font-size: 15px;
+			}
+			#content8{
+				width: 1200px;
+				height: 600px;
+				margin: auto;
+				margin-top: 100px;
+			}
+			#con8_top,#con9_top{
+				width: 1200px;
+				height: 170px;
+				margin-top: 120px;
+			}
+			#con8_top_1,#con9_top_1{
+				width: 1200px;
+				height: 80px;
+				font-size: 40px;
+				color: #E1C38B;
+				text-align: center;
+				line-height: 80px;
+				cursor: pointer;
+			}
+			#con8_top_1_1,#con9_top_1_1{
+				width: 50px;
+				height: 1px;
+				margin: auto;
+				border-top: 2px solid #E1C38B;
+			}
+			#con8_bottom{
+				width: 1200px;
+				height: 430px;
+			}
+			#con8_bottom ul li{
+				float: left;
+				width: 288px;
+				height: 430px;
+				list-style-type: none;
+				overflow: hidden;
+			}
+			.imgd{
+				width: 288px;
+				height: 240px;
+			}
+			#con8_bottom ul li img:hover{
+				transform: scale(1.1);
+				transition:ease-in 1s;
+				cursor: pointer;
+			}
+			.imgd img{
+				width: 288px;
+				height: 240px;
+			}
+			.p1{
+				margin-top: 10px;
+				font-size: 18px;
+				margin-left: 7px;
+			}
+			.p2{
+				margin-top: 10px;
+				font-size: 16px;
+				color: gray;
+				margin-left: 7px;
+			}
+			.p3{
+				margin-top: 40px;
+				font-size: 16px;
+				color: gray;
+				margin-left: 7px;
+			}
+			#content9{
+				width: 1200px;
+				height: 400px;
+				margin: auto;
+				margin-top: 100px;
+			}
+			#con9_bottom{
+				width: 1200px;
+				height: 220px;
+			}
+			#con9_bottom ul li{
+				list-style-type: none;
+				float: left;
+			}
+			#con9_bottom ul li img{
+				width: 288px;
+			}
+			#con9_bottom ul li img:hover{
+				transform: translateY(-5px);
+				transition: ease-in 0.3s;
+				 box-shadow: 1px 6px 4px 3px #E0E0E0;/*右阴影  下阴影  模糊度    阴影扩展半径    颜色  inset内阴影*/
+			}
+			#content10{
+				width: 1200px;
+				height: 400px;
+				margin: auto;
+			}
+			#con10_top{
+				width: 1200px;
+				height: 160px;
+			}
+			#con10_top ul li{
+				width: 160px;
+				height: 160px;
+				float: left;
+				list-style-type: none;
+				margin-left: 10px;
+				text-align: center;
+				font-size: 20px;
+				cursor: pointer;
+			}
+			#con10_top ul li img{
+				width: 50px;
+				height: 50px;
+				margin-top: 30px;
+			}
+			#con10_top ul li:hover{
+				color: #C79E68;
+				transform: scale(1.1);
+				transition: ease-in 0.5s;
+			}
+			#con10_bottom{
+				width: 1200px;
+				height: 350px;
+				border-top:gainsboro 1px solid ;
+			}
+			#con10_bottom_left{
+				width: 780px;
+				height:200px;
+				float: left;
+				margin-top: 40px;
+			}
+			#con10_bottom_left ul{
+				width: 130px;
+				height: 200px;
+				float: left;
+			}
+			#con10_bottom_left ul li{
+				list-style-type: none;
+				width: 130px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				color: grey;
+			}
+			.uli10{
+				font-size: 18px;
+			}
+			#con10_bottom_left ul li:hover{
+				color: #C79E68;
+				cursor: pointer;
+			}
+			#con10_bottom_right{
+				width: 419px;
+				height: 160px;
+				float: left;
+				margin-top: 40px;
+				text-align: center;
+				border-left:1px solid gainsboro ;
+			}
+			#p10{
+				width:190px; 
+				height:50px;
+				color: #C79E68;
+				font-size: 20px; 
+				border: 1px solid #C79E68;
+				margin-top:10px;
+				margin-bottom: 10px; 				
+				margin-left: 100px;
+				cursor: pointer;
+			}
+			#content11{
+				width: 100%;
+				height: 120px;
+				background-color: gainsboro;
+			}
+			#con11{
+				width: 1200px;
+				height: 70px;
+				margin: auto;
+				text-align: center;
+				color: gray;
+				padding-top: 25px;
+				font-size: 15px;
+			}
+			#con11 img{
+				cursor: pointer;
+				margin-top: 10px;
+			}
+			#fixd{
+				width: 60px;
+				height: 400px;
+				position: fixed;
+				z-index: 999;
+				right: 0;
+				bottom: 20px;
+			}
+			#fixd ul li{
+				width: 50px;
+				height: 50px;
+				list-style-type: none;
+				border-radius:50%;
+				margin: 10px 0;
+				text-align: center;
+				perspective: 1000;
+				-webkit-perspective: 1000px; /*父类容器中 perspective 子类允许透视*/
+				-moz-perspective: 1000px;
+				-ms-perspective: 1000px;
+				-o-perspective: 1000px;
+				perspective: 1000px;
+			}
+			#fixd ul li img{
+				margin-top: 10px;
+			}
+			.front{
+				width: 50px;
+				height: 50px;
+				border-radius:50px;
+				background-color:black;
+				z-index: 4;
+				transform: rotateY(0deg);
+				transform: rotateY(0deg);
+	 			-webkit-transform: rotateY(0deg);
+	 			-moz-transform: rotateY(0deg);
+	 			-ms-transform: rotateY(0deg);
+	 			-o-transform: rotateY(0deg);
+			}
+			.back{
+				width: 50px;
+				height: 50px;
+				border-radius:50px;
+				color: white;
+				font-size: 14px;
+				background-color: #C79E68;
+				z-index:3;
+	 			transform: rotateY(-180deg);
+	 			transform: rotateY(-180deg);
+	 			-webkit-transform: rotateY(-180deg);
+	 			-moz-transform: rotateY(-180deg);
+				-ms-transform: rotateY(-180deg);
+				-o-transform: rotateY(-180deg);
+			}
+			.front, .back {
+				backface-visibility: hidden;
+				transition: 0.6s ease-out;
+				-webkit-transition: .6s ease-out;
+	 			-webkit-transform-style: preserve-3d;
+	  			-moz-transform-style: preserve-3d;
+	  			-ms-transform-style: preserve-3d;
+	   			-o-transform-style: preserve-3d;
+	   			transform-style: preserve-3d;
+	  			position: absolute;
+	   			top: 0;
+	   			left: 0;
+			}
+			#fixd ul li:hover .back {
+				transform: rotateY(0deg);
+				-webkit-transform: rotateY(0deg);
+				-moz-transform: rotateY(0deg);
+				-ms-transform: rotateY(0deg);
+				-o-transform: rotateY(0deg);
+	  			z-index:2;
+			}
+			#fixd ul li:hover .front {
+	 			transform: rotateY(180deg);
+	 			-webkit-transform: rotateY(180deg);
+	 			-moz-transform: rotateY(180deg);
+	 			-ms-transform: rotateY(180deg);
+	 			-o-transform: rotateY(180deg);
+	  			z-index:1;
+			}
+			.fixd_a{
+				transition:transform 0.6s ease-out;
+				transition: transform .5s ease-in-out;
+				-webkit-transition: transform .5s ease-in-out;
+				-moz-transition: transform .5s ease-in-out;
+				-ms-transition: transform .5s ease-in-out;
+				-o-transition: transform .5s ease-in-out;
+				-webkit-transform-style: preserve-3d; /*使其子类变换后得以保留 3d转换后的位置*/
+				-moz-transform-style: preserve-3d;
+				-ms-transform-style: preserve-3d;
+				-o-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				display:block;
+				text-decoration: none;
+			}
+			#num1{
+				width: 50px;
+				height: 50px;
+				border-radius:50% ;
+				float: left;
+				margin-top: -50px;
+			}
+			#numdiv{
+				background-color: #C79E68;
+				width: 240px;
+				height: 44px;
+				margin-left: -203px;
+				padding-top: 6px;
+				color: white;
+				font-size: 25px;
+				border-radius:40px;
+				float: left;
+				
+			}
+		</style>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//定位下拉
+			function have(){
+				$("#wuhan").show();
+				document.getElementById("imgs").src="imgtop/向上箭头 .png";
+			}
+			function dont(){
+				$("#wuhan").hide();
+				document.getElementById("imgs").src="imgtop/向下箭头 (2).png"
+			}
+			//所搜下拉
+			function show(){
+				$("#xiala").show();
+			}
+			function hiddens(){
+				$("#xiala").hide();
+			}
+			window.onload=function(){
+				$("#xiala ul li").each(function(){
+					$(this).click(function(){
+						$("#names").text($(this)[0].innerText);
+						if($(this)[0].innerText=="找设计师"){
+							$("#texts").attr("placeholder","专业设计师团队，为您私人定制");
+						}else if($(this)[0].innerText=="看作品"){
+							$("#texts").attr("placeholder","海量效果图，装修灵感必备");
+						}else if($(this)[0].innerText=="装修课堂"){
+							$("#texts").attr("placeholder","实用学习攻略，装修早知道");
+						}
+					})
+				})
+								
+			}
+			//文本框存值
+			$(function(){
+				$("#zhuijiao").hide();
+				$("#texts").click(function(){
+					$("#zhuijiao").show();
+				})
+				$(document).click(function(e){
+					var ss=$("#texts");
+					//is() 方法用于查看选择的元素是否匹配选择器。是
+					//has() 选择器选取所有包含一个或多个元素在其内的元素，匹配指定的选择器。(包含关系<p><span></span></p>p元素中有span元素)
+					if (!ss.is(e.target)&&ss.has(e.target).length==0) {
+						$("#zhuijiao").hide();
+					} 
+				})
+			})
+			function sou(){
+				//获取文本框内容
+				var content=document.getElementById("texts").value;
+				//js
+//				var content=$("#texts").val();
+				$("#zhuijiao").append("<li>"+content+"</li>");
+				$("#texts").val(" ");
+			}
+			//二级列表
+			$(function(){
+				$("#top3 ul li").children("ul").hide();
+					$("#top3 ul li").hover(function(){
+					$(this).children("ul").slideDown("slow");//缓慢滑动显示
+				},function(){
+					$(this).children("ul").slideUp("slow");	//缓慢滑动隐藏
+				})
+				
+			})
+			
+			//滑动固定	onscroll滑动	时执行	scrollTop滑动的距离
+			window.onscroll = function(){
+				 if (document.body.scrollTop > 115 || document.documentElement.scrollTop > 115) {
+       				 document.getElementById("top3s").style.position="fixed";
+       				 document.getElementById("top3s").style.marginTop="-115px";
+        			 document.getElementById("top3s").style.zIndex="9999";
+   				 } else {
+        			document.getElementById("top3s").style.position = "static";
+        			document.getElementById("top3s").style.marginTop="0";
+    			}
+			}
+			
+			//轮播按键
+			$(function(){
+				$("#content1_but").hide();
+				$("#content1").hover(function(){
+					$("#content1_but").show();
+				},function(){
+					$("#content1_but").hide();
+				});
+			})
+			
+			//头部轮播1
+			$(function(){
+				//初始位置
+				var imgIndex=0;
+				//图片数量
+				var imgCount=$("#content1>ul>li").length;
+				//图片宽度
+				var imgwidth=$("#content1 img").width();
+				//线
+				var oli=$("#content1_2>ol>li").length;
+				//声明变量  判断轮播是否停止
+				var stop=false;
+				$("#content1").hover(function(){
+					stop=true;
+				},function(){
+					stop=false;
+				});
+				//定时器
+				var index=-1;
+				function app(){
+					if(stop==false){
+//						console.log(imgIndex);
+						imgIndex++;
+						imgIndex=imgIndex%imgCount; //0%4=0     1%4= 1     4%4=0  5%4=1
+						if (imgIndex<=3) {
+							$("#content1>ul").animate({"margin-left":-imgwidth*imgIndex+"px"},1000);	
+						} else{
+							$("#content1>ul").animate({"margin-left":+-1340+"px"},15);//当imgIndex=4是跳到第五张
+					    	imgIndex=1;//改变index就是改变了图片，将index还原成1,就是li列表的第二张图片index从0开始，切换到第二张
+//							setTimeout(function(){
+//							 $("#content1>ul").animate({"margin-left":+-2680+"px"},1500);//延迟执行切换到第二张
+//							},1000)
+						}
+						index++;					
+						if (index<3) {
+//							console.log(index);
+							$("#content1_2 ol li").eq(index).addClass('lis').siblings('li').removeClass('lis'); 						
+						} else{
+							index=-1;
+						}
+					
+					}
+				}
+				var timer=setInterval(function(){
+					app();
+				},3000);
+				//点击按钮
+				$("#bt2").click(function(){
+						imgIndex++;//1，2，3
+						imgIndex=imgIndex%imgCount; 
+						if (imgIndex<=3) {
+							$("#content1>ul").animate({"margin-left":-imgwidth*imgIndex+"px"},1000);	
+						} else{
+							$("#content1>ul").animate({"margin-left":+-1340+"px"},15);//当imgIndex=4是跳到第五张
+					    	imgIndex=1;//将index还原成1,就是li列表的第二张图片index从0开始
+						}
+					index++;					
+						if (index<3) {
+//							console.log(index);
+							$("#content1_2 ol li").eq(index).addClass('lis').siblings('li').removeClass('lis'); 						
+						} else{
+							index=-1;
+						}
+				})
+				var index2=3;
+				$("#bt1").click(function(){	
+						imgIndex--;
+//						alert(imgIndex)
+//						console.log(imgIndex);
+						if (imgIndex>=0) {
+							imgIndex=imgIndex%imgCount; //0%4=0     1%4= 1     4%4=0  5%4=1
+							$("#content1>ul").animate({"margin-left":-imgwidth*imgIndex+"px"},1000);	
+						} else{
+							imgIndex=imgIndex%imgCount; //imgIndex=-1  第四张
+							$("#content1>ul").animate({"margin-left":+-2680+"px"},15);//当图片切换到第1张,其实是我们复制的第4张图片时,切换到真正的第4张
+					  		  imgIndex=2;//将index还原城1,就是第四张图片
+						}
+						index2--;					
+						if (index2>=0) {
+//							console.log(index2);
+							$("#content1_2 ol li").eq(index2).addClass('lis').siblings('li').removeClass('lis'); 						
+						} else{
+							index2=3;
+						}
+				})		
+			
+		})
+			
+			//点击获取报价弹出提示框
+			function jia(){
+				//获取所有控件值
+				var num=document.getElementById("num").value;
+				var sectects=document.getElementById("ju").value;
+				var mian=document.getElementById("mianji").value;
+				var names=document.getElementById("namess").value;
+				//判断
+				var snum=/^[1][3,4,5,7,8][0-9]{9}$/;
+				if (sectects!=0) {
+					if (mian!="") {
+						if (mian>=20&&mian<1000) {
+							if (names!="") {
+								if (names.length>1) {
+									if (num!=""&&snum.test(num)) {
+										alert("提交成功!");
+									} else{
+										alert("请输入您的联系手机,便于我们第一时间与您取得联系!重新填写");
+									}
+								} else{
+									alert("请认真填写您的姓名,便于我们方便与您沟通!重新填写");
+								}
+							} else{
+								alert("请输入您的姓名!重新填写");
+							}
+						} else{
+							alert("建议选择人工精准报价!");
+						}
+					} else{
+						alert("请输入您的使用面积!,重新填写");
+					}
+				} else{
+					alert("请选择您的户型!重新填写");
+				}
+				
+			}
+			
+		//中间轮播2
+			//轮播按键
+			$(function(){
+				$("#pxs1").hover(function(){
+					document.getElementById("pxs1").src="imgcontent/左箭头.png";
+				},function(){
+					document.getElementById("pxs1").src="imgcontent/左箭头 (1).png";
+				});
+				$("#pxs2").hover(function(){
+					document.getElementById("pxs2").src="imgcontent/左箭头 (4).png";
+				},function(){
+					document.getElementById("pxs2").src="imgcontent/左箭头 (5).png";
+				})
+			})
+			//轮播图片
+			$(function(){
+				//初始位置
+				var imgIndex=0;
+				//图片数量
+				var imgCount=$("#content5>ul>li").length;
+				//图片宽度
+				var imgwidth=$("#content5 img").width()+15
+				//文字div宽度
+				var imgwidth2=$("#con5_1 ul li").width();
+				//声明变量  判断轮播是否停止
+				var stop=false;
+				$("#content5").hover(function(){
+					stop=true;
+				},function(){
+					stop=false;
+				});
+				//定时器
+				var index=-1;
+				//图片轮播规律
+				function app(){
+					if(stop==false){
+//						console.log(imgIndex);
+						imgIndex++;
+						imgIndex=imgIndex%imgCount; //0%4=0     1%4= 1     4%4=0  5%4=1
+						if (imgIndex<=5) {
+							$("#content5>ul").animate({"margin-left":-imgwidth*imgIndex+"px"},1000);	
+						} else{
+							$("#content5>ul").animate({"margin-left":+-1115+"px"},15);//当imgIndex=4是跳到第五张
+					    	imgIndex=1;//改变index就是改变了图片，将index还原成1,就是li列表的第二张图片index从0开始，切换到第二张
+						}
+					
+					}
+				}
+				var timer=setInterval(function(){
+					app();
+				},3000);				
+				//点击按钮
+				var lefts=13;
+				var leftss;
+				$("#butt2").click(function(){
+						imgIndex++;//1，2，3
+						imgIndex=imgIndex%imgCount; 
+						leftss=lefts*imgIndex;//计算滑块移动距离
+						if (imgIndex<=5) {
+							$("#content5>ul").animate({"margin-left":-imgwidth*imgIndex+"px"},1000);//图片移动
+							$(".c5_1_1").animate({"margin-left":-imgwidth2*imgIndex+"px"},1000);	//文字移动
+							$(".span1").text(imgIndex);//数字变化
+							$(".span2").css("margin-left",80+leftss+"px");//滑块移动
+						} else{
+							$("#content5>ul").animate({"margin-left":+-1115+"px"},15);//当imgIndex=4是跳到第五张
+					    	$(".c5_1_1").animate({"margin-left":+-260+"px"},15);
+					    	$(".span2").css("margin-left",13+leftss+"px");//滑块移动
+					    	imgIndex=1;//将index还原成1,就是li列表的第二张图片index从0开始
+					    	$(".span1").text(imgIndex);//数字变化
+					    
+						}
+				})
+				$("#butt1").click(function(){	
+						imgIndex--;
+						leftss=lefts*imgIndex;
+						console.log(imgIndex);
+						if (imgIndex>0) {
+							imgIndex=imgIndex%imgCount; //0%4=0     1%4= 1     4%4=0  5%4=1
+							$("#content5>ul").animate({"margin-left":-imgwidth*imgIndex+"px"},1000);
+							$(".c5_1_1").animate({"margin-left":-imgwidth2*imgIndex+"px"},1000);
+							$(".span1").text(imgIndex);//数字变化
+							$(".span2").css("margin-left",80+leftss+"px");//滑块移动
+						} else{
+							imgIndex=imgIndex%imgCount; //imgIndex=-1  第四张
+							$("#content5>ul").animate({"margin-left":+-5575+"px"},15);//当图片切换到第1张,其实是我们复制的第4张图片时,切换到真正的第4张
+					  		$(".c5_1_1").animate({"margin-left":+-1300+"px"},15);
+					  		//判断滑块到底移动多少，当imgIndex=0或-1，就直接跳到5，数字也是5
+					  		if(imgIndex==0 ||imgIndex==-1){
+					  			$(".span1").text("5");
+					  			$(".span2").css("margin-left","145px");
+					  		}else{
+					  			(".span1").text(imgIndex);//数字变化
+					  		}
+					  		 imgIndex=5;//将index还原城1,就是第四张图片
+						}
+				})	
+				//和上面butt1,butt2作用相同
+				$("#pxs2").click(function(){
+						imgIndex++;//1，2，3
+						imgIndex=imgIndex%imgCount; 
+						leftss=lefts*imgIndex;
+						if (imgIndex<=5) {
+							$("#content5>ul").animate({"margin-left":-imgwidth*imgIndex+"px"},1000);
+							$(".c5_1_1").animate({"margin-left":-imgwidth2*imgIndex+"px"},1000);	
+							$(".span1").text(imgIndex);
+							$(".span2").css("margin-left",80+leftss+"px");
+						} else{
+							$("#content5>ul").animate({"margin-left":+-1115+"px"},15);//当imgIndex=4是跳到第五张
+					    	$(".c5_1_1").animate({"margin-left":+-260+"px"},15);
+					    	$(".span2").css("margin-left",13+leftss+"px");
+					    	imgIndex=1;//将index还原成1,就是li列表的第二张图片index从0开始
+					    	$(".span1").text(imgIndex);
+					    
+						}
+				})
+				$("#pxs1").click(function(){	
+						imgIndex--;
+						leftss=lefts*imgIndex;
+						console.log(imgIndex);
+						if (imgIndex>0) {
+							imgIndex=imgIndex%imgCount; //0%4=0     1%4= 1     4%4=0  5%4=1
+							$("#content5>ul").animate({"margin-left":-imgwidth*imgIndex+"px"},1000);
+							$(".c5_1_1").animate({"margin-left":-imgwidth2*imgIndex+"px"},1000);
+							$(".span1").text(imgIndex);
+							$(".span2").css("margin-left",80+leftss+"px");
+						} else{
+							imgIndex=imgIndex%imgCount; //imgIndex=-1  第四张
+							$("#content5>ul").animate({"margin-left":+-5575+"px"},15);//当图片切换到第1张,其实是我们复制的第4张图片时,切换到真正的第4张
+					  		$(".c5_1_1").animate({"margin-left":+-1300+"px"},15);
+					  		if(imgIndex==0 ||imgIndex==-1){
+					  			$(".span1").text("5");
+					  			$(".span2").css("margin-left","145px");
+					  		}else{
+					  			(".span1").text(imgIndex);
+					  		}
+					  		 imgIndex=5;//将index还原城1,就是第四张图片
+						}
+				})	
+			})
+			//轮播文字
+			$(function(){
+				//初始位置
+				var imgIndex=1;
+				//图片数量
+				var imgCount=$("#con5_1>ul>li").length;
+				//文字div宽度
+				var imgwidth=$("#con5_1 ul li").width();
+				//声明变量  判断轮播是否停止
+				var stop=false;
+				$("#content5").hover(function(){
+					stop=true;
+				},function(){
+					stop=false;
+				});
+				//定时器
+				var index=-1;
+				//计算滑块移动的距离
+				var lefts=13;
+				var leftss;
+				function app(){
+					if(stop==false){
+//						console.log(imgIndex);
+						imgIndex++;
+						leftss=lefts*imgIndex;//计算小滑块移动的距离
+						imgIndex=imgIndex%imgCount; //0%4=0     1%4= 1     4%4=0  5%4=1
+						if (imgIndex<=5) {
+							$(".c5_1_1").animate({"margin-left":-imgwidth*imgIndex+"px"},1000);	//文字移动
+							$(".span1").text(imgIndex);//数字变化
+							$(".span2").css("margin-left",80+leftss+"px");//滑块移动
+						} else{
+							$(".c5_1_1").animate({"margin-left":+-260+"px"},15);
+					    	imgIndex=1;
+							$(".span1").text(imgIndex);//数字变化
+							leftss=lefts*imgIndex;
+							$(".span2").css("margin-left",80+leftss+"px");//滑块移动
+						}					
+					}
+				}
+				//定时器
+				var timer=setInterval(function(){
+					app();
+				},3000);
+			})
+			
+			//线段变长
+			function chang(){
+				$("#con4_1_1").css("transform","scaleX(2.2)");
+				$("#con4_1_1").css("transition","0.3s");
+			
+			}
+			function duan(){
+				$("#con4_1_1").css("transform","scaleX(1)");
+				$("#con4_1_1").css("transition","0.3s");
+			}
+			function chang2(){
+				$("#con7_top_1_1").css("transform","scaleX(2.2)");
+				$("#con7_top_1_1").css("transition","0.3s");
+			
+			}
+			function duan2(){
+				$("#con7_top_1_1").css("transform","scaleX(1)");
+				$("#con7_top_1_1").css("transition","0.3s");
+			}
+			function chang3(){
+				$("#con8_top_1_1").css("transform","scaleX(2.2)");
+				$("#con8_top_1_1").css("transition","0.3s");
+			
+			}
+			function duan3(){
+				$("#con8_top_1_1").css("transform","scaleX(1)");
+				$("#con8_top_1_1").css("transition","0.3s");
+			}
+			function chang4(){
+				$("#con9_top_1_1").css("transform","scaleX(2.2)");
+				$("#con9_top_1_1").css("transition","0.3s");
+			
+			}
+			function duan4(){
+				$("#con9_top_1_1").css("transform","scaleX(1)");
+				$("#con9_top_1_1").css("transition","0.3s");
+			}
+			
+			//轮播楼3
+			$(function(){
+				 var num =0; 
+				 function show(){ 
+				 	//排序 ，显示当前图片和小方块 
+				 	//动画animate()
+					$('#con6_left_bottom_2 ul li').eq(num).animate({
+						'opacity':1,"z-index":10
+					}).siblings('li').animate({//siblings返回被选元素的所有同级元素。
+						'opacity':0,'z-index':10-num
+					});
+					$('#con6_left_bottom_2_top ul li').eq(num).animate({
+						'opacity':1,"z-index":10
+					}).siblings('li').animate({//siblings返回被选元素的所有同级元素。
+						'opacity':0,'z-index':10-num
+					});
+					//当前加类名 ，其余的删除 (过滤器 eq)
+					$("#con6_left_bottom_1 ol li").eq(num).addClass("contentss").siblings("li").removeClass("contentss");
+				 }
+				//自动轮播 
+  				function autoplay(){ 
+  					num++;
+  					//轮播到第最后一张，num=0，重新轮播
+  					if(num>=$('#con6_left_bottom_2 ul li').length){ 
+  						num = 0; 
+  					}
+  					if(num>=$('#con6_left_bottom_2_top ul li').length){ 
+  						num = 0; 
+  					}
+  					//显示第一张 ,调用show();
+ 				 	show(); 
+ 				 } 
+ 				 //设置定时器 轮播开始 
+  				var timer = setInterval(function(){ 
+  					autoplay(); 
+  				},3000) 
+				//鼠标移上去 ，清除定时器 
+				$('#con6_left_bottom_1').mouseover(function(){ 
+					clearInterval(timer); 
+				}) 
+				//鼠标移出，重新设置定时器
+				$('#con6_left_bottom_1').mouseout(function(){ 
+					timer = setInterval(autoplay,3000); 
+				})
+				//鼠标移上去 ，清除定时器 
+				$('#con6_left_bottom_2').mouseover(function(){ 
+					clearInterval(timer); 
+				}) 
+				//鼠标移出，重新设置定时器
+				$('#con6_left_bottom_2').mouseout(function(){ 
+					timer = setInterval(autoplay,3000); 
+				})
+				//鼠标经过数字
+   				// 绑定事件 
+				$('#con6_left_bottom_1 ol li').hover(function(){ 
+					if(!$('#con6_left_bottom_1 ul').is(':animated')){//ul如果没有处在动画的状态 
+						var ind = $('#con6_left_bottom_1 ol li').index(this);//获取选中li的角标 
+						//alert(ind);
+						//当前的透明度为1 z-index为15 
+						//其他的为0 z-index为10-ind 
+						$('#con6_left_bottom_2 ul li').eq(ind).animate({'opacity':1,"z-index":10}).siblings('li').animate({'opacity':0,'z-index':10-ind}); 
+						$('#con6_left_bottom_2_top ul li').eq(ind).animate({'opacity':1,"z-index":10}).siblings('li').animate({'opacity':0,'z-index':10-ind}); 
+						//当前点击的加类名 ，其余的删除 
+						$(this).addClass('contentss').siblings('li').removeClass('contentss'); 
+					} 
+				}) 
+			})
+			
+			$(function(){
+				$("#yuyue").hover(function(){
+					$("#yuyue>p").css("display","block");
+				},function(){
+					$("#yuyue>p").css("display","none");
+				})
+			})
+			
+			//鼠标移上去切换
+			$(function(){
+				$(".ps1").hide();
+				$(".ps2").hide();
+				$(".ps3").hide();
+				$(".ps4").hide();
+				$("#con6_right_bottom_2>ul>li").each(function(index){
+						$(this).hover(function(){
+							//清除所有li的字体颜色
+							$("#con6_right_bottom_2>ul>li").removeClass("liss");
+							//给当前点击的li设置颜色
+							$(this).addClass("liss");
+							//隐藏所有内容
+							$("#con6_right_bottom_1>ul>li").hide();
+							//设置对应板块显示
+							$("#con6_right_bottom_1>ul>li:eq("+index+")").show();	
+							//判断什么情况下出现
+							if (index==0) {
+								$(".ps0").show();
+								$(".sp0").css("color","black");
+							} else{
+								$(".ps0").hide();
+								$(".sp0").css("color","#C79E68");		
+							}
+							if (index==1) {
+								$(".ps1").show();
+								$(".sp1").css("color","black");
+							} else{
+								$(".ps1").hide();
+								$(".sp1").css("color","#C79E68");
+							}
+							if (index==2) {
+								$(".ps2").show();
+								$(".sp2").css("color","black");
+							} else{
+								$(".ps2").hide();
+								$(".sp2").css("color","#C79E68");
+							}
+							if (index==3) {								
+								$(".ps3").show();
+								$(".sp3").css("color","black");
+							} else{
+								$(".ps3").hide();
+								$(".sp3").css("color","#C79E68");
+							}
+							if (index==4) {
+								$(".ps4").show();
+								$(".sp4").css("color","black");
+							} else{
+								$(".ps4").hide();
+								$(".sp4").css("color","#C79E68");								
+							}							
+						},function(){
+							//设置对应板块显示
+							$("#con6_right_bottom_1>ul>li:eq("+index+")").show();
+						})
+					})
+			})
+			
+			//span标签下移
+			$(function(){
+				$("#con7_span3").hide("slow");
+				$("#con7_2_span3").hide("slow");
+				$("#con7_bottom_1_1").hover(function(){					
+					$("#con7_p1").css("color","#C79E68");
+					$("#con7_span1").css("transform","translateY(110px)");
+					$("#con7_span1").css("color","#C79E68");				
+					$("#con7_span1").css("transition","1s");
+					$("#con7_span2").css("transform","translateY(110px)");
+					$("#con7_span2").css("transition","1s");
+					$("#con7_span2").hide("slow");
+					$("#con7_span3").css("transform","translateX(120px)");
+					$("#con7_span3").css("transition","1s");
+					$("#con7_span3").show("slow");
+					$("#con7_p2").css("transform","translateY(-20px)");
+					$("#con7_p2").css("transition","1s");
+				},function(){
+					$("#con7_p1").css("color","black");
+					$("#con7_span1").css("transform","translateY(0px)");
+					$("#con7_span1").css("color","gray");
+					$("#con7_span1").css("transition","1s");
+					$("#con7_span2").css("transform","translateY(0px)");
+					$("#con7_span2").css("transition","1s");
+					$("#con7_span2").css("display","block");
+					$("#con7_span3").css("transform","translateX(0px)");
+					$("#con7_span3").css("transition","1s");
+					$("#con7_span3").hide("slow");
+					$("#con7_p2").css("transform","translateY(0px)");
+					$("#con7_p2").css("transition","1s");										
+				})
+				
+				$("#con7_bottom_1_2").hover(function(){					
+					$("#con7_2_p1").css("color","#C79E68");
+					$("#con7_2_span1").css("transform","translateY(110px)");
+					$("#con7_2_span1").css("color","#C79E68");				
+					$("#con7_2_span1").css("transition","1s");
+					$("#con7_2_span2").css("transform","translateY(110px)");
+					$("#con7_2_span2").css("transition","1s");
+					$("#con7_2_span2").hide("slow");
+					$("#con7_2_span3").css("transform","translateX(120px)");
+					$("#con7_2_span3").css("transition","1s");
+					$("#con7_2_span3").show("slow");
+					$("#con7_2_p2").css("transform","translateY(-20px)");
+					$("#con7_2_p2").css("transition","1s");
+				},function(){
+					$("#con7_2_p1").css("color","black");
+					$("#con7_2_span1").css("transform","translateY(0px)");
+					$("#con7_2_span1").css("color","gray");
+					$("#con7_2_span1").css("transition","1s");
+					$("#con7_2_span2").css("transform","translateY(0px)");
+					$("#con7_2_span2").css("transition","1s");
+					$("#con7_2_span2").css("display","block");
+					$("#con7_2_span3").css("transform","translateX(0px)");
+					$("#con7_2_span3").css("transition","1s");
+					$("#con7_2_span3").hide("slow");
+					$("#con7_2_p2").css("transform","translateY(0px)");
+					$("#con7_2_p2").css("transition","1s");										
+				})
+			})
+			$(function(){
+				$("#con7_ul1>ul>li").hover(function(){
+					$(this).children(".dian").css("background-color","#C79E68");
+					$(this).children(".dian").css("border","1px solid #C79E68");
+					$(this).children(".pp").css("color","#C79E68");					
+				},function(){
+					$(this).children(".dian").css("background-color","");
+					$(this).children(".dian").css("border","1px solid darkgray");
+					$(this).children(".pp").css("color","#000000");
+				})
+				
+				$("#con7_bottom_2 ul li").hover(function(){
+					$(this).css("background-color","#C79E68");
+					$(this).children("span").css("color","white");
+					$(this).children("p").css("color","white");
+				},function(){
+					$(this).css("background-color","gainsboro");
+					$(this).children("span").css("color","black");
+					$(this).children("p").css("color","gray");					
+				})
+				
+			})
+			$(function(){
+			$("#p10").hover(function(){
+				$(this).css("color","white");
+				$(this).css("background-color","#C79E68");
+				document.getElementById("imgg").src="imgcontent/耳机 (1).png";				
+			},function(){
+				$(this).css("color","#C79E68");
+				$(this).css("background-color","white");
+				document.getElementById("imgg").src="imgcontent/耳机.png";	
+			})
+			
+			$("#con10_top_li1").hover(function(){
+				document.getElementById("im1").src="imgcontent/品质保障1.png";
+			},function(){
+				document.getElementById("im1").src="imgcontent/品质保障.png";	
+			})
+			
+			$("#con10_top_li2").hover(function(){
+				document.getElementById("im2").src="imgcontent/页面 (1).png";
+			},function(){
+				document.getElementById("im2").src="imgcontent/页面.png";
+			})
+			
+			$("#con10_top_li3").hover(function(){
+				document.getElementById("im3").src="imgcontent/施工队.png";
+			},function(){
+				document.getElementById("im3").src="imgcontent/施工队 (1).png";	
+			})
+			
+			$("#con10_top_li4").hover(function(){
+				document.getElementById("im4").src="imgcontent/施工队 (4).png";
+			},function(){
+				document.getElementById("im4").src="imgcontent/施工队 (3).png";		
+			})
+			
+			$("#con10_top_li5").hover(function(){
+				document.getElementById("im5").src="imgcontent/延期 (1).png";
+			},function(){
+				document.getElementById("im5").src="imgcontent/延期.png";	
+			})
+			
+			$("#con10_top_li6").hover(function(){
+				document.getElementById("im6").src="imgcontent/粉刷主题 (1).png";	
+			},function(){
+				document.getElementById("im6").src="imgcontent/粉刷主题.png";	
+			})
+			
+			$("#con10_top_li7").hover(function(){
+				document.getElementById("im7").src="imgcontent/电话_圈 (1).png";
+			},function(){
+				document.getElementById("im7").src="imgcontent/电话_圈.png";	
+			})
+		})
+		
+			
+		</script>
+	</head>
+	<body>
+		<div id="bigbox">
+			<div id="tops">
+				<div id="top">
+					<div id="topleft" onmousemove="have()" onmouseout="dont()">
+						<div style="float: left;margin-top: 5px;"><img src="imgtop/地址logo.PNG"/></div>
+						<span>房屋所在城市：</span>
+						<ul>
+							<li>武汉<span style=" width:16px;height: 35px; display: block;margin-top: 8px;float: right;"><img src="imgtop/向下箭头 (2).png" id="imgs"/></span></li>
+						</ul>
+						<div id="wuhan">
+							<a href="#">江岸</a>
+							<a href="#">江汉</a>
+							<a href="#">桥口</a>
+							<a href="#">汉阳</a>
+							<a href="#">武昌</a><br />
+							<a href="#">青山</a>
+							<a href="#">洪山</a>
+							<a href="#">东西湖</a>
+							<a href="#">汉南</a>
+							<a href="#">蔡甸</a><br />
+							<a href="#">江夏</a>
+							<a href="#">黄陂</a>
+							<a href="#">新洲</a>
+							
+						</div>
+					</div>
+					<div id="topright">
+						欢迎来到澳华装修官网
+						<span class="sp" id="sp">免费报价</span>
+						<span>|</span>
+						<span class="sp">预约设计</span>
+					</div>
+				</div>				
+			</div>
+			<div id="top2">
+				<div id="top2left">
+					<img src="imgtop/LOGO.PNG" style="float: left;"/>
+					<div style="float: left; line-height: 80px;color: black;">|&emsp;专注中高档装修26年</div>
+				</div>
+				<div id="top2conten">
+					<div>
+						<div id="top2conten_1" onmousemove="show()" onmouseout="hiddens()">
+							<span id="names">找设计师</span>
+							<img src="imgtop/向下箭头 (3).png" style="width:14px;height: 14px;padding-left: 6px;padding-top: 5px;"/>
+							<div id="xiala">
+								<ul>
+									<li>找设计师</li>
+									<li>看作品</li>
+									<li>装修课堂</li>
+								</ul>
+							</div>
+						</div>
+						<div id="top2conten_2">
+							<input type="text" placeholder="专业设计师团队，为您私人定制" id="texts" style="width:238px;height:35px;outline:none;border:none;"/>
+							<div id="zhuijiao">
+								<ul>
+								</ul>
+							</div>
+						</div>
+						<div id="top2conten_3" onclick="sou()">搜索</div>
+					</div>
+				</div>
+				<div id="top2right">
+					<span style="color: gray;font-size: 14px;">全国咨询热线</span><br />
+					<img src="imgtop/电话.png" />
+					<span style="font-size: 25px;">027-82790100</span>
+				</div>
+			</div>
+			<div id="top3s">
+				<div id="top3">
+					<ul>
+						<li>首页</li>
+						<li>澳华产品
+							<ul>
+								<li>无忧装3.0</li>
+							</ul>
+						</li>
+						<li>实景案例
+							<ul>
+								<li>实景案例</li>
+								<li>预约参观</li>
+							</ul>
+						</li>
+						<li>最新活动
+							<ul>
+								<li>最新优惠</li>
+								<li>澳华大事件</li>
+								<li>特惠预约</li>
+							</ul>
+						</li>
+						<li>设计大咖
+							<ul>
+								<li>设计总监</li>
+								<li>高级主任设计师</li>
+								<li>主任设计师</li>
+								<li>CBDA特约设计</li>
+							</ul>
+						</li>
+						<li>装修知识
+							<ul>
+								<li>家装百科</li>
+								<li>家居风水</li>
+								<li>装修选材</li>
+								<li>软装攻略</li>
+							</ul>
+						</li>
+						<li>金牌保障
+							<ul>
+								<li>设计保障</li>
+								<li>施工保障</li>
+								<li>品质保障</li>
+								<li>安全保障</li>
+								<li>闪电售后</li>
+							</ul>
+						</li>
+						<li>澳华新闻
+							<ul>
+								<li>品牌历程</li>
+								<li>澳华工装</li>
+								<li>爱心澳华</li>
+								<li>品牌历程</li>
+								<li>企业文化</li>
+							</ul>
+						</li>
+						<li>终身会员俱乐部
+							<ul>
+								<li>关于会员</li>
+								<li>直播直播间</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="content1">
+				<ul>
+					<li><img src="http://www.ao-hua.com/uploadfile/2019/1020/20191020060542311.jpg" /></li>
+					<li><img src="http://www.ao-hua.com/uploadfile/2019/0925/20190925053408266.jpg" /></li>
+					<li><img src="http://www.ao-hua.com/uploadfile/2018/1025/20181025035903653.jpg" /></li>
+					<li><img src="http://www.ao-hua.com/uploadfile/2019/1020/20191020060542311.jpg" /></li>
+					<li><img src="http://www.ao-hua.com/uploadfile/2019/0925/20190925053408266.jpg" /></li>
+				</ul>
+				<div id="content1_but">
+					<div id="bt1"><</div>
+					<div id="bt2">></div>
+				</div>
+				<div id="content1_2" class="content1_2">
+					<ol>
+						<li class="lis"></li>
+						<li></li>
+						<li></li>
+					</ol>
+				</div>
+			</div>
+			<div id="content2">
+				<div id="content2_1">
+					<div id="content2_1_1">
+						<div style="width:42px;height: 42px;padding-top: 10px;float: left;padding-left: 15px;">
+							<img src="imgcontent/逗号2 (2).png"/>
+						</div>
+						<span style="display: block;height: 42px;padding-top:12px;font-size: 20px;">装修第一步，算算我家装修一共需要多少钱</span><br />
+						<table>
+							<tr>
+								<th ><input type="text" id="num" placeholder="您的手机号"style="margin-left: 20px;"/></th>
+								<td>
+									<select name="ju" id="ju">
+										<option value="0">家居户型</option>
+										<option value="1">两室两厅一卫一厨</option>
+										<option value="2">两室两厅一厨两卫</option>
+										<option value="3">三室两厅一厨一卫</option>
+										<option value="4">三室两厅一厨一卫</option>
+										<option value="4">四室两厅一厨一卫</option>
+									</select>
+								</td>
+								<td><input type="text" id="mianji" placeholder="您的房屋面积"/><div id="m">m2</div></td>
+								<td><input type="text" id="namess" placeholder="您的称呼"/></td>
+							</tr>
+						</table>
+					</div>
+					<div id="content2_1_2">
+						<div id="baojia" onclick="jia()">
+							<p>获&emsp;取</p>
+							<p style="margin-top: 8px;">报&emsp;价</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content3">
+				<ul>
+					<li><img src="imgcontent/房子 copy.png"/><br/><p style="font-size: 20px;">澳华无忧装</p><p style="color: gray;font-size: 16px;">开启"无忧"装修之旅</p></li>
+					<li><img src="imgcontent/计算 (1).png"/><br/><p style="font-size: 20px;">免费报价</p><p style="color: gray;font-size: 16px;">最快10秒报价，一键轻松获取</p></li>
+					<li><img src="imgcontent/时钟 (1).png"/><br/><p style="font-size: 20px;">预约设计</p><p style="color: gray;font-size: 16px;">规划理想生活蓝图</p></li>
+					<li><img src="imgcontent/vr.png"/><br/><p style="font-size: 20px;">VR体验</p><p style="color: gray;font-size: 16px;">眼见为实，未来家近在眼前</p></li>
+				</ul>
+			</div>
+			<div id="content4" onmousemove="chang()"onmouseout="duan()">
+				<div id="con4_1">
+					经典设计
+					<div id="con4_1_1"></div>
+				</div>
+				<p style="width:1200;text-align: center; margin-top: 10px;color: gray;font-size: 20px;">无忧装五大风格样板间，贴合家居生活理念</p>
+				<div id="con4_2">
+					<ul>
+						<li class="li1">港式风格</li>
+						<li>美式风格</li>
+						<li>欧式风格</li>
+						<li>现代风格</li>
+						<li>中式风格</li>
+						<li>地中海风格</li>
+						<li>北欧风格</li>
+						<li>新古典风格</li>
+						<li>全部案例></li>
+					</ul>
+				</div>
+			</div>
+			<div id="content5">
+				<ul>
+					<li><img src="http://www.ao-hua.com/uploadfile/2017/1014/20171014083549392.jpg"/></li>
+					<li><img src="http://www.ao-hua.com/uploadfile/2017/1014/20171014083738817.jpg"/></li>
+					<li><img src="http://www.ao-hua.com/uploadfile/2017/1014/20171014083653557.jpg"/></li>
+					<li><img src="imgcontent/20171014083717838.jpg"/></li>
+					<li><img src="imgcontent/20171014082538766.jpg"/></li>
+					<li><img src="http://www.ao-hua.com/uploadfile/2017/1014/20171014083549392.jpg"/></li>
+					<li><img src="http://www.ao-hua.com/uploadfile/2017/1014/20171014083738817.jpg"/></li>
+					<li><img src="http://www.ao-hua.com/uploadfile/2017/1014/20171014083653557.jpg"/></li>
+					<li><img src="imgcontent/20171014083717838.jpg"/></li>
+					<li><img src="imgcontent/20171014082538766.jpg"/></li>
+				</ul>
+				<div id="con5_1">
+					<ul>
+						<li>
+							<div class="c5_1_1"><p class="px1">澳华无忧装-遇见·巴黎</p><p class="px2">糅合了简约主义的利落、爽洁，又继承了传统欧陆风格的精致、华丽、时尚而富有内涵备受年轻新贵的追崇</p></div>
+						</li>
+						<li>
+							<div class="c5_1_1"><p class="px1">澳华无忧装 遇见·中环</p><p class="px2">客厅以金属色和线条感营造出奢华感简洁而不失时尚，米色调的软装家居是点睛之笔，衬托出家的典雅和温馨</p></div>
+							<div class="c5_1_2">
+								0<span class="span1">1</span>&nbsp;<span>/&nbsp;05</span><br />
+								<span class="pxs1"><img src="imgcontent/左箭头 (1).png" id="pxs1"/></span>
+								<span class="span2"></span>
+								<span class="span3"></span>
+								<span class="pxs2"><img src="imgcontent/左箭头 (5).png" id="pxs2"/></span>
+							</div>
+						</li>
+						<li>
+							<div class="c5_1_1"><p class="px1">澳华无忧装-遇见·江南</p><p class="px2">继承传统家居中的经典元素，造型简朴优美.色彩浓重而成熟,表达对淡雅含蓄古典端庄的东方式精神境界的追求</p></div>
+						</li>
+						<li>
+							<div class="c5_1_1"><p class="px1">澳华无忧装-遇见·台北</p><p class="px2">整体设计简约精致，于细微处又缀有温馨的元素开放式厨房的设计让空间通透大方小空间也不将就</p></div>
+						</li>
+						<li>
+							<div class="c5_1_1"><p class="px1">澳华无忧装-遇见.加州</p><p class="px2">豪华太大气多了份自在，随意的情调感没有太多造作的修饰与约束不经意中也成就了另外</p></div>
+						</li>
+						<li>
+							<div class="c5_1_1"><p class="px1">澳华无忧装-遇见·巴黎</p><p class="px2">糅合了简约主义的利落、爽洁，又继承了传统欧陆风格的精致、华丽、时尚而富有内涵备受年轻新贵的追崇</p></div>
+						</li>
+						<li>
+							<div class="c5_1_1"><p class="px1">澳华无忧装 遇见·中环</p><p class="px2">客厅以金属色和线条感营造出奢华感简洁而不失时尚，米色调的软装家居是点睛之笔，衬托出家的典雅和温馨</p></div>
+						</li>
+						<li>
+							<div class="c5_1_1"><p class="px1">澳华无忧装-遇见·江南</p><p class="px2">继承传统家居中的经典元素，造型简朴优美.色彩浓重而成熟,表达对淡雅含蓄古典端庄的东方式精神境界的追求</p></div>
+						</li>
+						<li>
+							<div class="c5_1_1"><p class="px1">澳华无忧装-遇见·台北</p><p class="px2">整体设计简约精致，于细微处又缀有温馨的元素开放式厨房的设计让空间通透大方小空间也不将就</p></div>
+						</li>
+						<li>
+							<div class="c5_1_1"><p class="px1">澳华无忧装-遇见.加州</p><p class="px2">豪华太大气多了份自在，随意的情调感没有太多造作的修饰与约束不经意中也成就了另外</p></div>
+						</li>
+					</ul>
+				</div>
+				<div id="butt1"><</div>
+				<div id="butt2">></div>
+			</div>
+			<div id="content6">
+				<div id="con6">
+					<div id="con6_left">
+						<div id="con6_left_top">
+							<p style="font-size: 30px;margin-top: 40px;padding-bottom: 10px;">无忧装.热装小区</p>
+							<span style="color: gray;">发现澳华无忧装真实案例，与邻居交流装修感受</span>
+							<a href="#" >MORE+</a>
+						</div>
+						<div id="con6_left_bottom">
+							<div id="con6_left_bottom_1" class="con6_left_bottom_1">
+								<ol>
+									<li class="contentss"><hr style="color: gray ;width:0.01px; height: 50px;margin-left: 50px;" /><p>01</p><span>电建地产盛...</span></li>
+									<li><hr style="color: gray ;width:0.01px; height: 50px;margin-left: 50px;margin-top: 5px;" /><p>02</p><span>鸿达中央广场</span></li>
+									<li><hr style="color: gray ;width:0.01px; height: 50px;margin-left: 50px;margin-top: 5px;" /><p>03</p><span>汉口佰昌广场</span></li>
+								</ol>
+							</div>
+							<div id="con6_left_bottom_2">
+								<ul>
+									<li id="have"><img src="http://www.ao-hua.com/uploadfile/2018/0427/201805020001.jpg"/></li>
+									<li><img src="http://www.ao-hua.com/uploadfile/2018/0427/201805020002.jpg"/></li>
+									<li><img src="http://www.ao-hua.com/uploadfile/2018/0427/201805020003.jpg"/></li>
+								</ul>
+							</div>
+							<div id="con6_left_bottom_2_top">
+								<ul>
+									<li><p>电建地产盛世江城建筑总面积约62万方，位于汉口核心区，五维立体交通覆盖，近享CBD、菱角湖、唐家墩三大商圈繁华。作为中...</p></li>
+									<li><p>鸿达中央广场位于武汉临空港开发区及吴家山的核心地段，扼守临空港大道与东西湖大道的黄金交汇点，与东西湖区政府隔路相对...</p></li>
+									<li><p>佰昌公馆，项目占地面积约17万方，未来将形成集居住、办公、商业于一体的智慧居住中心。作为“智慧未来，智慧武汉”的品牌...</p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="con6_right">
+						<div id="con6_right_top">
+							<p style="font-size: 30px;margin-top: 40px;padding-bottom: 10px;">设计团队</p>
+							<span style="color: gray;">168位澳华装修精英设计师，200000江城家庭的一致信任</span>
+							<a href="#" >MORE+</a>
+						</div>
+						<div id="con6_right_bottom">
+							<div id="con6_right_bottom_1" class="con6_right_bottom_1">
+								<ul>
+									<li><img src="http://www.ao-hua.com/uploadfile/2017/1108/20171108073013519.jpg" alt="张涛"/></li>
+									<li><img src="http://www.ao-hua.com/uploadfile/2017/0915/20170915113559138.jpg" alt="邱维"></li>
+									<li><img src="http://www.ao-hua.com/uploadfile/2017/0915/20170915112700292.jpg" alt="王晶"></li>
+									<li><img src="http://www.ao-hua.com/uploadfile/2017/0915/20170915112433524.jpg" alt="赵雯婷"></li>
+									<li><img src="http://www.ao-hua.com/uploadfile/2017/1224/20171224033908746.jpg" alt="刘慧"></li>
+									<li><img src="http://www.ao-hua.com/uploadfile/2017/1108/20171108073013519.jpg" alt="张涛"/></li>
+								</ul>			
+							</div>
+							<div id="con6_right_bottom_2" class="con6_right_bottom_2">
+								<ul>
+									<li class="liss"><p class="sp0">张涛&emsp;设计总监</p><p class="ps0">设计理念：随心生活，随心设计</p></li>
+									<li><p class="sp1">邱维&emsp;设计总监</p><p class="ps1">设计理念：细节决定整体！</p></li></li>
+									<li><p class="sp2">王晶&emsp;设计总监</p><p class="ps2">设计理念：用专业的知识，丰富的经验为客户打造适合自己的美宅，将所有的付出价值最大化是力求达到的目标。</p></li></li>
+									<li><p class="sp3">赵雯婷&emsp;设计总监</p><p class="ps3">设计理念：设计不仅仅是对艺术理念的一种构造，也是对生活态度的一种诠释。追求细节，将实用和形美做到更精</p></li></li>
+									<li><p class="sp4">刘慧&emsp;设计总监</p><p class="ps4">设计理念：文化修养是多年沉淀和积累下来的；古典是一种元素和气质；舒适则是我们对自己家和人生的一种态度和期许。</p></li></li>
+								</ul>
+							</div>
+							<div id="yuyue"><p>预约设计</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content7">
+				<div id="con7_top" onmousemove="chang2()" onmouseout="duan2()">
+					<div id="con7_top_1">
+						装修知识
+						<div id="con7_top_1_1"></div>
+						<p style="color: gray; font-size: 20px;">家庭装修全攻略，澳华装饰就是您的家装百科书</p>
+					</div>
+				</div>
+				<div id="con7_bottom">
+					<div id="con7_bottom_1">
+						<div id="con7_bottom_1_1">
+							<p id="con7_p1">客厅阳台改造</p>
+							<span id="con7_span1">07-05</span><span id="con7_span2">&emsp;2018</span>
+							<p id="con7_p2">如果客厅可以阳台，这样设计比有阳台好看2倍</p>
+							<div id="con7s"><span id="con7_span3"><img src="imgcontent/箭头.png"/></span> </div>
+							<div id="xq">了解详情</div>
+						</div>
+						<div id="con7_bottom_1_2">
+							<p id="con7_2_p1">轻古典风格，柔美中又带点别致的梦想居家</p>
+							<span id="con7_2_span1">07-05</span><span id="con7_2_span2">&emsp;2018</span>
+							<p id="con7_2_p2">年轻主人因为喜欢轻古典风格，又希望保有现代的时尚感，设计师通过硬装的局部改造和采用时尚前卫的软装...</p>
+							<div id="con7_2s"><span id="con7_2_span3"><img src="imgcontent/箭头.png"/></span> </div>
+							<div id="xq2">了解详情</div>
+						</div>
+						<div id="con7_bottom_1_3">
+							<div id="con7_ul1">
+								<ul>
+									<li id="uli"><p class="dian"></p><p class="pp">连辅材都不会挑，你还敢做清包？"</p> <span>2018-11-03</span></li>
+									<li><p class="dian"></p><p class="pp">设计师 Show Time丨吴奇 沉淀的时光</p><span>2018-11-02</span></li>
+									<li><p class="dian"></p><p class="pp">设计师 Show Time丨吴侃 “创”造价值</p><span>2018-10-24</span></li>
+									<li><p class="dian"></p><p class="pp">设计师 Show Time丨陈果 享受设计 享受生活</p><span>2018-11-22</span></li>
+									<li><p class="dian"></p><p class="pp">设计师 Show Time丨陆芬芬 怦然心动</p><span>2018-10-20</span></li>
+									<li><p class="dian"></p><p class="pp">客厅装修需注意 切忌不要犯禁忌!</p><span>2018-10-19</span></li>
+									<li><p class="dian"></p><p class="pp">装修后房子有污染怎么办？</p><span>2018-10-19</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="con7_bottom_2">
+						<ul>
+							<li><span>家装百科</span><p>Encyclopedias</p></li>
+							<li><span>家居风水</span><p>Feng Shui</p></li>
+							<li><span>家装选材</span><p>Material</p></li>
+							<li><span>家装攻略</span><p>strategy</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="content8">
+				<div id="con8_top" onmousemove="chang3()" onmouseout="duan3()">
+					<div id="con8_top_1">
+						澳华新闻
+						<div id="con8_top_1_1"></div>
+						<p style="color: gray; font-size: 20px;">一线媒体强势报道，全面解析澳华无忧装模式</p>
+					</div>
+				</div>
+				<div id="con8_bottom">
+					<ul>
+						<li><div class="imgd"><img src="imgcontent/20190719095035783.jpg"/></div><p class="p1">澳华26周年感恩有你 | 因为有你…</p><p class="p2">澳华装饰已服务江城20万业主，成为武汉中高端家装市场的首选品牌。在澳华发展的里…</p><p class="p3">2019-07-18</p></li>
+						<li style="margin-left: 15px; margin-right: 15px;"><div class="imgd"><img src="imgcontent/20190719095101584.jpg"/></div><p class="p1">工地巡检第八期 | 一份清凉 一份…</p><p class="p2">7月16日上午，澳华装饰首席巡检官、副总经理笪逸奇带队，在对3家工地巡检的同时,…</p><p class="p3">2019-07-18</p></li>
+						<li style="margin-right: 15px;"><div class="imgd"><img src="imgcontent/20181018110458800.jpg"/></div><p class="p1">热烈欢迎 | 中国建筑装饰协会领…</p><p class="p2">10月16日上午，中国建筑装饰协会执行会长兼秘书长刘晓一  、《中国建筑装饰装…</p><p class="p3">2019-10-18</p></li>
+						<li><div class="imgd"><img src="imgcontent/20181018104423565.jpg"/></div><p class="p1">热烈祝贺 | 三十不凡 砥砺前行 澳…</p><p class="p2">今日是武汉建筑装饰协会成立30周年之际。为回顾武汉装饰行业三十年发展历程，总…</p><p class="p3">2019-10-18</p></li>
+					</ul>
+				</div>
+			</div>
+			<div id="content9">
+				<div id="con9_top" onmousemove="chang4()" onmouseout="duan4()">
+					<div id="con9_top_1">
+						最新策划
+						<div id="con9_top_1_1"></div>
+						<p style="color: gray; font-size: 20px;">澳华无忧装模式，让您装修全程无忧</p>
+					</div>
+				</div>
+				<div id="con9_bottom">
+					<ul>
+						<li><img src="imgcontent/ch-bj.jpg"/></li>
+						<li style="margin-left: 15px; margin-right: 15px;"><img src="imgcontent/ch-cs.jpg"/></li>
+						<li style="margin-right: 15px;"><img src="imgcontent/ch-lf.jpg"/></li>
+						<li><img src="imgcontent/ch-nt.jpg"/></li>
+					</ul>
+				</div>
+			</div>
+			<div id="content10">
+				<div id="con10_top">
+					<ul>
+						<li id="con10_top_li1"><img src="imgcontent/品质保障.png" id="im1"/><br/><span>品质保障</span></li>
+						<li id="con10_top_li2"><img src="imgcontent/页面.png" id="im2"/><br/><span>全程0增项</span></li>
+						<li id="con10_top_li3"><img src="imgcontent/施工队 (1).png" id="im3"/><br/><span>施工团队保障</span></li>
+						<li id="con10_top_li4"><img src="imgcontent/施工队 (3).png" id="im4"/><br/><span>施工质量保障</span></li>
+						<li id="con10_top_li5"><img src="imgcontent/延期.png" id="im5"/><br/><span>延期保障</span></li>
+						<li id="con10_top_li6"><img src="imgcontent/粉刷主题.png" id="im6"/><br/><span>售后保障</span></li>
+						<li id="con10_top_li7"><img src="imgcontent/电话_圈.png" id="im7"/><br/><span>投诉保障</span></li>
+					</ul>
+				</div>
+				<div id="con10_bottom">
+					<div id="con10_bottom_left">
+						<ul>
+							<li class="uli10">装修资讯</li>
+							<li>家装百科</li>
+							<li>家居风水</li>
+							<li>家装选材</li>
+							<li>家装攻略</li>
+						</ul>
+						<ul>
+							<li class="uli10">装修相关</li>
+							<li>家装日记</li>
+							<li>热装小区</li>
+							<li>vr体验</li>
+						</ul>
+						<ul>
+							<li class="uli10">整装服务</li>
+							<li>无忧装</li>
+							<li>装修保障</li>
+							<li>整装保价</li>
+							<li>参观样板间</li>
+						</ul>
+						<ul>
+							<li class="uli10">在线服务</li>
+							<li>免费量房</li>
+							<li>下单流程</li>
+							<li>预约设计</li>
+							<li>投诉受理</li>
+						</ul>
+						<ul>
+							<li class="uli10">澳华服务</li>
+							<li>标准工程</li>
+							<li>装修分期</li>
+						</ul>
+						<ul>
+							<li class="uli10">关于澳华</li>
+							<li>澳华简介</li>
+							<li>联系澳华</li>
+							<li>澳华外埠</li>
+							<li>澳华工建</li>
+						</ul>
+					</div>
+					<div id="con10_bottom_right">
+						<p style="color: #C79E68;font-size: 25px;">24小时服务热线：027-82790100</p>
+						<p style="color: gray;font-size: 16px;">（服务时间：周一至周日）</p>
+						<div id="p10">
+							<img src="imgcontent/耳机.png" id="imgg" style="padding-right: 10px;padding-top: 8px;"/>
+							24小时在线咨询
+						</div>
+						<p style="color: gray;font-size: 16px;">商务合作：027-82790100</p>
+					</div>
+				</div>
+			</div>
+			<div id="content11">
+				<div id="con11">
+					<p>武汉澳华装饰设计工程有限公司 页面版权所有  COPYRIGHT 2017 www.ao-hua.com 鄂ICP备11005316号-1</p>
+					<p>公司地址：武汉市江岸区澳门路232号金冠大厦12楼　无忧家装免费服务热线：027-82790100</p>
+					<img src="imgcontent/pic.gif"/>
+				</div>
+			</div>
+			<div id="fixd">
+				<ul>
+					<li ontouchstart="this.classList.toggle('hover');">
+						<a href="#" class="fixd_a">
+							<div class="front "><img src="imgcontent/耳机.png"/></div>
+							<div class="back">在线<br/>咨询</div>
+						</a>
+					</li>
+					<li ontouchstart="this.classList.toggle('hover');">
+						<a href="#" class="fixd_a">
+							<div class="front "><img src="imgcontent/设计.png"/></div>
+							<div class="back">预约<br/>设计</div>
+						</a>
+					</li>
+					<li ontouchstart="this.classList.toggle('hover');">
+						<a href="#" class="fixd_a">
+							<div class="front "><img src="imgcontent/报价.png"/></div>
+							<div class="back">免费<br/>报价</div>
+						</a>
+					</li>
+					<li ontouchstart="this.classList.toggle('hover');">
+						<a href="#" class="fixd_a">
+							<div class="front "><img src="imgcontent/信封.png"/></div>
+							<div class="back">免费<br/>量房</div>
+						</a>
+					</li>
+					<li ontouchstart="this.classList.toggle('hover');">
+						<a href="#" class="fixd_a">
+							<div class="front "><img src="imgcontent/24小时电话2.png"/></div>
+							<div class="back"><div id="numdiv">027-82790100</div><div id="num1">免费<br/>电话</div></div>
+						</a>
+					</li><li ontouchstart="this.classList.toggle('hover');">
+						<a href="#" class="fixd_a">
+							<div class="front "><img src="imgcontent/返回顶部.png"/></div>
+							<div class="back"><a href="#top" style="color: white;text-decoration: none;">返回<br/>顶部</a></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
